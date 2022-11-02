@@ -1,34 +1,102 @@
-*{
-    margin: 0%  ;
+* {
+    margin: 0%;
     padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.background {
+    background-image: linear-gradient(45deg,rgba(37, 6, 76, 1),rgba(93, 23, 94, 1));
+    height: 100vh;
+    
+    
+    
+
 }
 .login-reg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+    
+    
+
+    
+
+
+}   
+                               
+
+
 .login {
-    background-color: blueviolet;
+    
+    background-image: linear-gradient(45deg,rgba(143, 82, 171, 1),rgba(209, 104, 180, 1));
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-left: 45px;
     padding-right: 45px;
     border-radius: 27px;
+    color: rgba(68, 15, 86, 1);
+    
+    
+
+
+
 }
+
+.login-box {
+    
+    
+    text-align: center;
+
+}
+
 .inputs {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 150px;
-    padding-left: 10px;
+    padding: 5px;
+    height: 45px;
+    width: 300px;
     border-radius: 9px;
     border: none;
-    margin: 0px 0px 30px;
+    margin: 0px 0px 00px;
+    font-size: 20px;
+    background-color: rgba(68, 15, 86, 1);
+    color: rgba(133, 84, 150, 1);
     
+
+
+
+
 }
-.entrar {
+.inputs::placeholder{
+    color: rgba(133, 84, 150, 1);
+}
+
+.login-box>button {
+
     padding: 10px 32px 10px;
     border-radius: 6.5px;
-    margin: 50px 100px 0px;
+    margin: 30px 0px 10px;
     border: none;
+    background-image: linear-gradient(45deg,rgba(93, 18, 118, 1),rgba(133, 46, 163, 1));
+    color: rgba(230, 156, 255, 1);
+
+}
+.login-box>h2{
+    margin: 30px 0px 0px;
+    text-align: left;
+}
+.login-box>p{
+    margin: 5px 0px 0px;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: rgba(105, 34, 129, 1);
 }
