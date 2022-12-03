@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(105, 34, 129, 1);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(105, 34, 129, 1);
+}
+
+.form {
+    padding: 60px;
+    background-image: linear-gradient(45deg, rgba(143, 82, 171, 1), rgba(209, 104, 180, 1));
+    border-radius: 25px ;
+}
+
+
+
+.container {
+    height: 390px;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background-image: linear-gradient(45deg, rgba(37, 6, 76, 1), rgba(93, 23, 94, 1));
+    background-attachment: fixed;
+}
+
+.button{
+    background-image: linear-gradient(45deg, rgba(93, 18, 118, 1), rgba(133, 46, 163, 1));
+    color: white;
+}
+
+.button:hover{
+    background-image: linear-gradient(45deg, rgba(106, 31, 131, 1), rgb(148, 33, 187));
+    color: rgb(253, 190, 255);
+}
+
+@media (max-width:1059px) {
+    .logo-kethi {
+        width: 160px;
+    }
+    .container {
+        flex-wrap: wrap;
+        min-width: 280px;
+    }
+}
