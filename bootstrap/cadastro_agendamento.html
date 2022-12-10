@@ -56,46 +56,36 @@
     <div class="register-all d-flex align-items-center justify-content-center">
         <div class="register-user container-fluid bg-light rounded-4 shadow p-5">
             <div class="">
-                <h1>Disponiveis</h1>
-                <p>Aqui voce cadastrar e remover as tattoos disponiveis</p>
+                <h1>Novo Agendamento</h1>
+                <p>Aqui voce realiza um novo agendamento</p>
                 <hr>
             </div>
-            <div class="container-fluid d-flex flex-column align-items-center">
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Nome da Arte</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Nome da Arte">
+            <div class="container-fluid gap-3 d-flex flex-column align-items-center"></div>
+                <div class="d-flex justify-content-start align-items-center"><Label>Cliente</Label>
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Descrição</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Descrição">
+            
+                <select class="form-select" aria-label="Default select example">
+                    <option value="">Selecione...</option>
+                    <option value="1">--</option>
+                  </select>
+                    
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <label for="">Data:</label>
+                                <input type="date" class="form-control" name="data" id="data">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Horario:</label>
+                                <input type="time" class="form-control" name="data" id="data">
+                            </div>
+                        </div>
+                    
+                  
+                  <br>
+                  <div class="">
+                      <button class="btn btn-success" name="btn_salvar">Salvar</button>
+                  </div>
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Minimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Maximo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Minimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Valor minimo">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Maximo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Valor Máximo">
-                </div>
-
-                <div class="d-grid">
-                    <button class="btn btn-success" name="btn_salvar">Salvar</button>
-                </div>
-            </div>
         </div>
     </div>
 

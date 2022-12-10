@@ -27,19 +27,16 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link text-light dropdown-toggle " href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Registros
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light dropdown-hover"
-                                        href="cadastro_clientes.html">Novo Cliente</a></li>
-                                <li><a class="dropdown-item text-light dropdown-hover" href="#">Novo Agendamentos</a>
-                                </li>
-                                <li><a class="dropdown-item text-light dropdown-hover"
-                                        href="cadastro_portifolio.html">Disponiveis</a></li>
-                            </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Registros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-light dropdown-hover" href="cadastro_clientes.html">Novo Cliente</a></li>
+                                    <li><a class="dropdown-item text-light dropdown-hover" href="cadastro_agendamento.html">Novo Agendamentos</a></li>
+                                    <li><a class="dropdown-item text-light dropdown-hover" href="cadastro_portifolio.html">Disponiveis</a></li>
+                                </ul>
                         </li>
                         </li>
                         <li class="nav-item">
@@ -60,7 +57,7 @@
                 <p>Aqui voce cadastrar e remover as tattoos disponiveis</p>
                 <hr>
             </div>
-            <div class="container-fluid d-flex flex-column align-items-center">
+            <div class="form-group row">
                 <div class="input-group mb-3">
                     <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Nome da Arte</span>
                     <input type="text" class="form-control" aria-label="Sizing example input"
@@ -71,28 +68,40 @@
                     <input type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default" placeholder="Descrição">
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Minimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Minimo</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Maximo</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Minimo</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Valor minimo">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Maximo</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" placeholder="Valor Máximo">
+                    </div>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Tamanho Maximo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Tamanho em cm">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Minimo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Valor minimo">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text place-sizing place-color" id="inputGroup-sizing-default">Valor Maximo</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Valor Máximo">
-                </div>
-
-                <div class="d-grid">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                  </div>
+                
+                <div class="d-flex w-100">
                     <button class="btn btn-success" name="btn_salvar">Salvar</button>
                 </div>
             </div>
